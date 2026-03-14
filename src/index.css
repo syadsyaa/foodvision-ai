@@ -74,11 +74,11 @@
 
 @layer utilities {
   .glass-panel {
-    @apply bg-card/70 backdrop-blur-xl border border-border/50;
+    @apply bg-card/70 backdrop-blur-xl border border-border/60;
   }
 
   .glass-nav {
-    @apply bg-background/80 backdrop-blur-xl border-b border-border/50;
+    @apply bg-background/85 backdrop-blur-xl border-b border-border/60;
   }
 
   .glow-border {
