@@ -6,54 +6,55 @@
 
 @layer base {
   :root {
-    --background: 0 0% 3.5%;
-    --foreground: 0 0% 93%;
+    /* Palette: #41431B, #AEB784, #E3DBBB, #F8F3E1 */
+    --background: 50 30% 96%;
+    --foreground: 63 42% 18%;
 
-    --card: 0 0% 6%;
-    --card-foreground: 0 0% 93%;
+    --card: 43 30% 90%;
+    --card-foreground: 63 42% 18%;
 
-    --popover: 0 0% 6%;
-    --popover-foreground: 0 0% 93%;
+    --popover: 43 30% 90%;
+    --popover-foreground: 63 42% 18%;
 
-    --primary: 142 60% 55%;
-    --primary-foreground: 0 0% 3.5%;
+    --primary: 65 30% 40%;
+    --primary-foreground: 50 30% 96%;
 
-    --secondary: 0 0% 10%;
-    --secondary-foreground: 0 0% 70%;
+    --secondary: 43 26% 82%;
+    --secondary-foreground: 63 42% 18%;
 
-    --muted: 0 0% 10%;
-    --muted-foreground: 0 0% 50%;
+    --muted: 43 26% 86%;
+    --muted-foreground: 63 20% 38%;
 
-    --accent: 0 0% 12%;
-    --accent-foreground: 0 0% 93%;
+    --accent: 65 22% 60%;
+    --accent-foreground: 63 42% 18%;
 
     --destructive: 0 62% 50%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 50 30% 96%;
 
-    --border: 0 0% 14%;
-    --input: 0 0% 14%;
-    --ring: 142 60% 55%;
+    --border: 43 18% 78%;
+    --input: 43 18% 78%;
+    --ring: 65 30% 40%;
 
     --radius: 0.625rem;
 
-    --surface-elevated: 0 0% 8%;
-    --surface-glass: 0 0% 6% / 0.7;
-    --glow-primary: 142 60% 55% / 0.1;
-    --glow-primary-strong: 142 60% 55% / 0.2;
+    --surface-elevated: 43 28% 92%;
+    --surface-glass: 43 30% 90% / 0.7;
+    --glow-primary: 65 30% 40% / 0.12;
+    --glow-primary-strong: 65 30% 40% / 0.22;
 
-    --stat-calories: 35 92% 60%;
-    --stat-protein: 210 90% 60%;
-    --stat-fat: 340 75% 60%;
-    --stat-carbs: 45 95% 55%;
+    --stat-calories: 25 80% 50%;
+    --stat-protein: 200 70% 45%;
+    --stat-fat: 340 60% 50%;
+    --stat-carbs: 45 80% 45%;
 
-    --sidebar-background: 0 0% 5%;
-    --sidebar-foreground: 0 0% 93%;
-    --sidebar-primary: 142 60% 55%;
-    --sidebar-primary-foreground: 0 0% 3.5%;
-    --sidebar-accent: 0 0% 10%;
-    --sidebar-accent-foreground: 0 0% 93%;
-    --sidebar-border: 0 0% 14%;
-    --sidebar-ring: 142 60% 55%;
+    --sidebar-background: 43 26% 86%;
+    --sidebar-foreground: 63 42% 18%;
+    --sidebar-primary: 65 30% 40%;
+    --sidebar-primary-foreground: 50 30% 96%;
+    --sidebar-accent: 43 26% 82%;
+    --sidebar-accent-foreground: 63 42% 18%;
+    --sidebar-border: 43 18% 78%;
+    --sidebar-ring: 65 30% 40%;
   }
 }
 
@@ -73,11 +74,11 @@
 
 @layer utilities {
   .glass-panel {
-    @apply bg-card/70 backdrop-blur-xl border border-border/50;
+    @apply bg-card/70 backdrop-blur-xl border border-border/60;
   }
 
   .glass-nav {
-    @apply bg-background/80 backdrop-blur-xl border-b border-border/50;
+    @apply bg-background/85 backdrop-blur-xl border-b border-border/60;
   }
 
   .glow-border {
